@@ -108,7 +108,7 @@ You own your data and control what each audience sees.
     Target="ADMIN_EMAILS"
     Default=""
     Mode=""
-    Description="Email address for admin access. Required when enabling Google or GitHub login."
+    Description="Email address for admin access. Required for all authentication methods."
     Type="Variable"
     Display="always"
     Required="true"
