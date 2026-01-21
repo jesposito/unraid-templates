@@ -236,4 +236,16 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false">llama3.2</Config>
 
+  <!-- Admin UI (Advanced) -->
+  <Config
+    Name="Admin UI (Advanced)"
+    Target="ADMIN_ENABLED"
+    Default="false"
+    Mode=""
+    Description="Enables the PocketBase admin UI at /_/ for troubleshooting. Leave disabled unless needed."
+    Type="Variable"
+    Display="advanced"
+    Required="false"
+    Mask="false">false</Config>
+
 </Container>
