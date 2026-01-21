@@ -32,7 +32,7 @@ You own your data and control what each audience sees.
 
   <Requires/>
 
-  <!-- Network -->
+  <!-- Web UI Port -->
   <Config
     Name="Web UI Port"
     Target="8080"
@@ -56,7 +56,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false"/>
 
-  <!-- Storage -->
+  <!-- App Data -->
   <Config
     Name="App Data"
     Target="/data"
@@ -68,6 +68,7 @@ You own your data and control what each audience sees.
     Required="true"
     Mask="false">/mnt/user/appdata/facet</Config>
 
+  <!-- Uploads -->
   <Config
     Name="Uploads"
     Target="/uploads"
@@ -79,7 +80,7 @@ You own your data and control what each audience sees.
     Required="true"
     Mask="false">/mnt/user/appdata/facet/uploads</Config>
 
-  <!-- Core App -->
+  <!-- Admin Email -->
   <Config
     Name="Admin Email"
     Target="ADMIN_EMAILS"
@@ -91,6 +92,7 @@ You own your data and control what each audience sees.
     Required="true"
     Mask="false"/>
 
+  <!-- Public URL -->
   <Config
     Name="Public URL"
     Target="APP_URL"
@@ -102,6 +104,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false"/>
 
+  <!-- Trust Proxy -->
   <Config
     Name="Trust Proxy"
     Target="TRUST_PROXY"
@@ -113,7 +116,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false">true</Config>
 
-  <!-- Permissions -->
+  <!-- PUID -->
   <Config
     Name="PUID"
     Target="PUID"
@@ -125,6 +128,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false">99</Config>
 
+  <!-- PGID -->
   <Config
     Name="PGID"
     Target="PGID"
@@ -136,7 +140,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false">100</Config>
 
-  <!-- OAuth -->
+  <!-- Google Client ID -->
   <Config
     Name="Google Client ID"
     Target="GOOGLE_CLIENT_ID"
@@ -148,6 +152,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false"/>
 
+  <!-- Google Client Secret -->
   <Config
     Name="Google Client Secret"
     Target="GOOGLE_CLIENT_SECRET"
@@ -159,6 +164,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="true"/>
 
+  <!-- GitHub Client ID -->
   <Config
     Name="GitHub Client ID"
     Target="GITHUB_CLIENT_ID"
@@ -170,6 +176,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false"/>
 
+  <!-- GitHub Client Secret -->
   <Config
     Name="GitHub Client Secret"
     Target="GITHUB_CLIENT_SECRET"
@@ -181,7 +188,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="true"/>
 
-  <!-- AI Integrations -->
+  <!-- OpenAI API Key -->
   <Config
     Name="OpenAI API Key"
     Target="OPENAI_API_KEY"
@@ -193,6 +200,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="true"/>
 
+  <!-- Anthropic API Key -->
   <Config
     Name="Anthropic API Key"
     Target="ANTHROPIC_API_KEY"
@@ -204,6 +212,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="true"/>
 
+  <!-- Ollama URL -->
   <Config
     Name="Ollama URL"
     Target="OLLAMA_BASE_URL"
@@ -215,6 +224,7 @@ You own your data and control what each audience sees.
     Required="false"
     Mask="false"/>
 
+  <!-- Ollama Model -->
   <Config
     Name="Ollama Model"
     Target="OLLAMA_MODEL"
@@ -225,17 +235,5 @@ You own your data and control what each audience sees.
     Display="advanced"
     Required="false"
     Mask="false">llama3.2</Config>
-
-  <!-- Advanced -->
-  <Config
-    Name="Admin UI (Advanced)"
-    Target="ADMIN_ENABLED"
-    Default="false"
-    Mode=""
-    Description="Enables the PocketBase admin UI at /_/ for troubleshooting. Leave disabled unless needed."
-    Type="Variable"
-    Display="advanced"
-    Required="false"
-    Mask="false">false</Config>
 
 </Container>
