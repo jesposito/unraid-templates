@@ -11,7 +11,7 @@
     <WebUI>http://[IP]:[PORT:3000]/</WebUI>
     <Privileged>false</Privileged>
     <Support>https://github.com/jesposito/Facet/issues</Support>
-    <Project>https://facet-demo.theansible.co/</Project>
+    <Project>https://github.com/jesposito/Facet</Project>
     <Overview>
         Facet is a self-hosted personal profile platform that lets you create multiple views of your professional profile for different audiences (recruiters, conferences, clients). &#xD;
         &#xD;
@@ -34,6 +34,7 @@
     <Changes>
         ### 2026-01-30
 
+        - Change Project link to GitHub repo
         - Move Google/GitHub OAuth back to main settings
         - Fix internal container port to 3000
         - Lock Admin UI Enabled to false (hidden setting)
